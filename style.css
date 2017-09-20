@@ -502,6 +502,8 @@ a:hover {
     width: 700px;
     margin: 0 auto;
     margin-bottom: 26px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .wrapper hr {
     height: 2px;
