@@ -417,6 +417,9 @@ a:hover {
   font-size: 15px;
   font-weight: 300;
 }
+.wrapper main .social-mobile {
+  display: none;
+}
 .wrapper footer {
   max-width: 1400px;
   height: 77px;
@@ -432,9 +435,6 @@ a:hover {
   font-weight: 300;
 }
 @media (max-width: 768px) {
-  .wrapper {
-    margin-bottom: 700px;
-  }
   .wrapper header {
     display: flex;
     justify-content: space-between;
@@ -499,5 +499,151 @@ a:hover {
   }
   .wrapper hr {
     height: 2px;
+  }
+  .wrapper footer {
+    height: 52px;
+  }
+}
+@media (max-width: 750px) {
+  .wrapper header {
+    height: 55px;
+    padding: 0 15px;
+  }
+  .wrapper header .header-wrap .logo a h1 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .wrapper header .header-wrap .logo a h1 span {
+    font-size: 14px;
+  }
+  .wrapper header .header-wrap .social {
+    display: none;
+  }
+  .wrapper main {
+    padding: 20px 15px;
+  }
+  .wrapper main aside .contact {
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .wrapper main aside .contact section {
+    width: 100%;
+  }
+  .wrapper main .content {
+    max-width: 100%;
+  }
+  .wrapper main .content article {
+    width: 100%;
+  }
+  .wrapper main .content article h3 {
+    display: block;
+    padding: 0;
+    padding-top: 12px;
+    border-bottom: none;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .wrapper main .content .info {
+    padding: 0;
+  }
+  .wrapper main .content .info .info-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .wrapper main .content .info .info-wrap img {
+    margin: 24px auto;
+  }
+  .wrapper main .content .info .info-wrap section span {
+    color: #5a636b;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .wrapper main .content .info .info-wrap section span b {
+    display: block;
+    color: #5a636b;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .wrapper main .content .info .info-wrap section span:last-of-type div {
+    display: inline-block;
+  }
+  .wrapper main .content .info .info-wrap section span:last-of-type div:first-of-type {
+    margin-top: 20px;
+  }
+  .wrapper main .content .experience {
+    padding: 0;
+  }
+  .wrapper main .content .experience section {
+    flex-direction: column;
+    margin: 0;
+  }
+  .wrapper main .content .experience section:last-of-type {
+    padding-bottom: 20px;
+  }
+  .wrapper main .content .experience section img {
+    margin: 27px auto 17px;
+  }
+  .wrapper main .content .experience section .wrap-exp {
+    margin-top: 0;
+    text-align: center;
+  }
+  .wrapper main .content .experience section .wrap-exp p {
+    color: #5a636b;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .wrapper main .content .experience section .wrap-exp span {
+    color: #5a636b;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .wrapper main .content .education {
+    padding: 0;
+  }
+  .wrapper main .content .education section {
+    flex-direction: column;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .wrapper main .content .education section:last-of-type {
+    padding-bottom: 20px;
+  }
+  .wrapper main .content .education section img {
+    margin: 27px auto 17px;
+  }
+  .wrapper main .content .education section .wrap-ed {
+    margin-top: 0;
+    text-align: center;
+  }
+  .wrapper main .content .education section .wrap-ed p {
+    color: #4a545d;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .wrapper main .content .education section .wrap-ed span {
+    color: #4a545d;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .wrapper main .social-mobile {
+    display: block;
+    order: 3;
+    margin: 20px auto 0;
+  }
+  .wrapper main .social-mobile .fa {
+    font-size: 40px;
+    color: #536a79;
+    margin-left: 10px;
+  }
+  .wrapper main .social-mobile .fa:hover {
+    color: #00abbe;
+    transition: color 1s ease-out 0.5s;
+  }
+  .wrapper footer {
+    height: 35px;
   }
 }
