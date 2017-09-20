@@ -186,11 +186,14 @@ a:hover {
   background-image: linear-gradient(to right, rgba(28, 102, 122, 0.95) 0%, rgba(246, 250, 254, 0.95) 0%, rgba(216, 216, 216, 0.95) 0%, rgba(242, 246, 250, 0.95) 0%, rgba(28, 102, 122, 0.95) 48%, rgba(242, 246, 250, 0.95) 100%);
 }
 .wrapper main {
-  max-width: 1400px;
+  width: 900px;
   margin: 0 auto;
-  padding: 40px 220px;
+  padding: 40px 0;
   display: flex;
   justify-content: space-between;
+}
+.wrapper main aside {
+  margin-right: 50px;
 }
 .wrapper main aside nav {
   width: 250px;
@@ -434,7 +437,7 @@ a:hover {
   font-size: 13px;
   font-weight: 300;
 }
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .wrapper header {
     display: flex;
     justify-content: space-between;
@@ -459,10 +462,12 @@ a:hover {
   .wrapper main {
     flex-direction: column;
     padding: 40px 0;
+    width: 100%;
   }
   .wrapper main aside {
     order: 2;
     margin-top: 26px;
+    margin-right: 0;
   }
   .wrapper main aside nav {
     display: none;
@@ -491,6 +496,7 @@ a:hover {
   .wrapper main .content {
     order: 1;
     width: 768px;
+    margin: 0 auto;
   }
   .wrapper main .content article {
     width: 700px;
