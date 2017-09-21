@@ -696,8 +696,16 @@ a:hover {
 @media (max-width: 450px) {
   .wrapper main .content .my-works .wrap-work {
     display: block;
+    padding: 0 10px;
+    width: 100%;
   }
   .wrapper main .content .my-works .wrap-work .work-item {
     margin: 0 auto;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .wrapper main .content .my-works .wrap-work .work-item img {
+    width: 100%;
+    height: auto;
   }
 }
