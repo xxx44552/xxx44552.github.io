@@ -698,6 +698,7 @@ a:hover {
     display: block;
     padding: 0 10px;
     width: 100%;
+    padding-bottom: 25px;
   }
   .wrapper main .content .my-works .wrap-work .work-item {
     margin: 0 auto;
