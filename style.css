@@ -274,12 +274,15 @@ a:hover {
   height: 40px;
   cursor: pointer;
   line-height: 40px;
+  display: flex;
+  align-items: center;
 }
-.wrapper main aside .contact section span {
+.wrapper main aside .contact section a {
   color: #ffffff;
   font-size: 14px;
   font-weight: 300;
   margin-left: 20px;
+  font-family: Fira Sans;
 }
 .wrapper main aside .contact section .fa {
   font-size: 22px;
@@ -694,6 +697,9 @@ a:hover {
   }
 }
 @media (max-width: 450px) {
+  .wrapper main .content article {
+    padding: 0 10px;
+  }
   .wrapper main .content .my-works .wrap-work {
     display: block;
     padding: 0 10px;

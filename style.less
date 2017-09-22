@@ -205,11 +205,14 @@ a, a:hover {text-decoration: none;}
 					height: 40px;
 					cursor: pointer;
 					line-height: 40px;
-					span {
+					display: flex;
+					align-items: center;
+					a {
 						color: #ffffff;
 						font-size: 14px;
 						font-weight: 300;
 						margin-left: 20px;
+						font-family: @main-font;
 					}
 					.fa {
 						font-size: 22px;
@@ -660,6 +663,9 @@ a, a:hover {text-decoration: none;}
 	.wrapper {
 		main {
 			.content {
+				article {
+					padding: 0 10px;
+				}
 				.my-works {
 					.wrap-work {
 						display: block;
