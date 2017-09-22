@@ -282,6 +282,9 @@ a, a:hover {text-decoration: none;}
 						&:nth-child(2n) {
 							margin-right: 0;
 						}
+						&:last-of-type {
+							margin-right: 0;
+						}
 						img {
 							width: 180px;
 							height: 150px;
@@ -462,7 +465,6 @@ a, a:hover {text-decoration: none;}
 					margin-bottom: 30px;
 					font-size: 0;
 					display: flex;
-					align-items: baseline;
 					section {
 						display: flex;
 						align-items: center;
@@ -486,7 +488,7 @@ a, a:hover {text-decoration: none;}
 					.wrap-work {
 						&:last-child {
 								display: flex;
-								justify-content: flex-start;
+								justify-content: space-around;
 							}
 						.work-item {
 							&:nth-child(2n) {
@@ -698,7 +700,9 @@ a, a:hover {text-decoration: none;}
 								&:nth-child(2n) {
 									margin-right: 0;
 								}
-								
+								&:last-of-type {
+									margin-right: 25px;
+								}
 								
 							}
 					}
@@ -741,6 +745,9 @@ a, a:hover {text-decoration: none;}
 							margin: 0 auto;
 							margin-bottom: 25px;
 							width: 100%;
+							&:nth-child(3n) {
+								margin-right: 0;
+							}
 							img {
 								width: 100%;
 								height: auto;

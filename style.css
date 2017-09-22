@@ -353,6 +353,9 @@ a:hover {
 .wrapper main .content .my-works .wrap-work .work-item:nth-child(2n) {
   margin-right: 0;
 }
+.wrapper main .content .my-works .wrap-work .work-item:last-of-type {
+  margin-right: 0;
+}
 .wrapper main .content .my-works .wrap-work .work-item img {
   width: 180px;
   height: 150px;
@@ -519,7 +522,6 @@ a:hover {
     margin-bottom: 30px;
     font-size: 0;
     display: flex;
-    align-items: baseline;
   }
   .wrapper main aside .contact section {
     display: flex;
@@ -541,7 +543,7 @@ a:hover {
   }
   .wrapper main .content .my-works .wrap-work:last-child {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
   }
   .wrapper main .content .my-works .wrap-work .work-item:nth-child(2n) {
     margin-right: 25px;
@@ -721,6 +723,9 @@ a:hover {
   .wrapper main .content .my-works .wrap-work .work-item:nth-child(2n) {
     margin-right: 0;
   }
+  .wrapper main .content .my-works .wrap-work .work-item:last-of-type {
+    margin-right: 25px;
+  }
 }
 @media (max-width: 644px) {
   .wrapper main .content .my-works .wrap-work .work-item:last-of-type {
@@ -741,6 +746,9 @@ a:hover {
     margin: 0 auto;
     margin-bottom: 25px;
     width: 100%;
+  }
+  .wrapper main .content .my-works .wrap-work .work-item:nth-child(3n) {
+    margin-right: 0;
   }
   .wrapper main .content .my-works .wrap-work .work-item img {
     width: 100%;
