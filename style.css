@@ -226,6 +226,7 @@ a:hover {
   height: 35px;
   line-height: 35px;
   text-align: center;
+  font-family: Fira Sans;
   width: 100%;
   color: #fff;
   font-size: 18px;
@@ -395,10 +396,11 @@ a:hover {
 }
 .wrapper main .content .info .info-wrap img {
   display: block;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 150px;
-  height: 125px;
-  margin: 11px 24px 0 55px;
+  height: 231px;
+  margin: 3px 24px 0 55px;
+  border: 1px solid #73cdda;
 }
 .wrapper main .content .info .info-wrap section span {
   display: block;
@@ -425,19 +427,22 @@ a:hover {
 }
 .wrapper main .content .experience section {
   display: flex;
-  margin-bottom: 17px;
+  align-items: center;
   margin-left: 58px;
+  margin-bottom: 17px;
+}
+.wrapper main .content .experience section:first-of-type {
+  margin-top: 24px;
 }
 .wrapper main .content .experience section:last-of-type {
   margin-bottom: 0;
 }
-.wrapper main .content .experience section img {
-  display: block;
-  margin-top: 24px;
-  margin-right: 30px;
+.wrapper main .content .experience section .fa {
+  font-size: 30px;
+  color: #777;
 }
 .wrapper main .content .experience section .wrap-exp {
-  margin-top: 24px;
+  margin-left: 20px;
 }
 .wrapper main .content .experience section .wrap-exp p {
   color: #4a545d;
@@ -451,19 +456,22 @@ a:hover {
 }
 .wrapper main .content .education section {
   display: flex;
+  align-items: center;
   margin-bottom: 17px;
   margin-left: 58px;
+}
+.wrapper main .content .education section:first-of-type {
+  margin-top: 24px;
 }
 .wrapper main .content .education section:last-of-type {
   margin-bottom: 0;
 }
-.wrapper main .content .education section img {
-  display: block;
-  margin-top: 24px;
-  margin-right: 30px;
+.wrapper main .content .education section .fa {
+  font-size: 30px;
+  color: #777;
 }
 .wrapper main .content .education section .wrap-ed {
-  margin-top: 24px;
+  margin-left: 20px;
 }
 .wrapper main .content .education section .wrap-ed p {
   color: #4a545d;
@@ -677,11 +685,14 @@ a:hover {
     flex-direction: column;
     margin: 0;
   }
+  .wrapper main .content .experience section:first-of-type {
+    margin-top: 15px;
+  }
   .wrapper main .content .experience section:last-of-type {
     padding-bottom: 20px;
   }
-  .wrapper main .content .experience section img {
-    margin: 27px auto 17px;
+  .wrapper main .content .experience section .fa {
+    margin-top: 16px;
   }
   .wrapper main .content .experience section .wrap-exp {
     margin-top: 0;
@@ -705,11 +716,14 @@ a:hover {
     margin-left: 0;
     margin-bottom: 0;
   }
+  .wrapper main .content .education section:first-of-type {
+    margin-top: 15px;
+  }
   .wrapper main .content .education section:last-of-type {
     padding-bottom: 20px;
   }
-  .wrapper main .content .education section img {
-    margin: 27px auto 17px;
+  .wrapper main .content .education section .fa {
+    margin-top: 16px;
   }
   .wrapper main .content .education section .wrap-ed {
     margin-top: 0;
