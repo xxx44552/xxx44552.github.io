@@ -175,8 +175,16 @@ a:hover {
   margin-left: 10px;
 }
 .wrapper header .header-wrap .social .fa:hover {
-  color: #00abbe;
-  transition: color 1s ease-out 0.5s;
+  transition: color 0.1s ease-out 0.1s;
+}
+.wrapper header .header-wrap .social .fa-vk:hover {
+  color: #597da3;
+}
+.wrapper header .header-wrap .social .fa-facebook:hover {
+  color: #3b5998;
+}
+.wrapper header .header-wrap .social .fa-github:hover {
+  color: #171515;
 }
 .wrapper header #mobile-menu .fa {
   color: #000;
@@ -750,8 +758,16 @@ a:hover {
     margin-left: 10px;
   }
   .wrapper main .social-mobile .fa:hover {
-    color: #00abbe;
-    transition: color 1s ease-out 0.5s;
+    transition: color 0.1s ease-out 0.1s;
+  }
+  .wrapper main .social-mobile .fa-vk:hover {
+    color: #597da3;
+  }
+  .wrapper main .social-mobile .fa-facebook:hover {
+    color: #3b5998;
+  }
+  .wrapper main .social-mobile .fa-github:hover {
+    color: #171515;
   }
   .wrapper footer {
     height: 35px;
