@@ -3,5 +3,10 @@ window.onload = function toggleMobileMenu() {
   var elem = document.getElementById('mob-nav');
   el.onclick = function() {
     elem.classList.toggle('hiddenMenu');
-  } 
-}
+  };
+};
+
+function closeMenu() {
+	var elem = document.getElementById('mob-nav');
+		elem.classList.add('hiddenMenu');
+};
