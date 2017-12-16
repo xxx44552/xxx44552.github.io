@@ -1,0 +1,15 @@
+#Кодировка
+AddDefaultCharset UTF-8
+#Убераем html расширение в конце браузерной строки
+RewriteEngine on
+RewriteBase /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+RewriteRule ^([^.]+)\.html$ http://londonjack.ru/$1 [R=301,L]
+RewriteCond %{REQUEST_URI} !(\.[^./]+)$
+RewriteCond %{REQUEST_fileNAME} !-d
+RewriteCond %{REQUEST_fileNAME} !-f
+RewriteRule (.*) /$1.html [L]
+#Запрет выдачи листинга каталогов
+Options -Indexes
+#Убираем index’ное дополнение из URL главной страницы сайта.
+RewriteRule ^index\.html$ http://www.londonjack.ru/ [R=301,L]
