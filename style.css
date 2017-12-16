@@ -119,6 +119,9 @@ a:hover {
 .hiddenMenu {
   display: none;
 }
+body {
+  overflow: scroll;
+}
 .wrapper {
   max-width: 1400px;
   height: 100%;
@@ -267,8 +270,21 @@ a:hover {
   width: 100%;
   height: 73px;
 }
+.wrapper main aside nav li:nth-of-type(1) a,
 .wrapper main aside nav li:nth-of-type(2) a {
-  border-bottom: 2px solid #3ba8c0;
+  position: relative;
+}
+.wrapper main aside nav li:nth-of-type(1) a:after,
+.wrapper main aside nav li:nth-of-type(2) a:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #00abbe;
 }
 .wrapper main aside nav li a {
   display: block;
@@ -289,8 +305,9 @@ a:hover {
   border: none;
 }
 .wrapper main aside nav .nav-active {
+  height: 75px;
   background-color: #00abbe;
-  border-radius: 4px 4px 0 0;
+  border-radius: 4px;
 }
 .wrapper main aside .contact {
   width: 250px;
@@ -362,6 +379,79 @@ a:hover {
 }
 .wrapper main .content article:last-of-type {
   margin-bottom: 0;
+}
+.wrapper main .content .feedback {
+  padding: 0 20px 30px;
+}
+.wrapper main .content .feedback form {
+  margin-top: 30px;
+}
+.wrapper main .content .feedback form .feedback-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.wrapper main .content .feedback form .feedback-wrapper section {
+  width: 47.5%;
+}
+.wrapper main .content .feedback form .feedback-wrapper section label {
+  display: block;
+  font-family: Fira Sans;
+  margin-bottom: 8px;
+}
+.wrapper main .content .feedback form .feedback-wrapper section input {
+  width: 100%;
+  height: 30px;
+  font-family: Fira Sans;
+  padding: 0 10px;
+  border: 1px solid #73cdda;
+  border-radius: 3px;
+}
+.wrapper main .content .feedback form .feedback-wrapper section input::-webkit-input-placeholder {
+  color: grey;
+}
+.wrapper main .content .feedback form .feedback-wrapper section input::-moz-placeholder {
+  color: grey;
+}
+.wrapper main .content .feedback form .feedback-wrapper section input:-moz-placeholder {
+  color: grey;
+}
+.wrapper main .content .feedback form .feedback-wrapper section input:-ms-input-placeholder {
+  color: grey;
+}
+.wrapper main .content .feedback form .feedback-wrapper label[for="messege"] {
+  margin-top: 30px;
+  font-family: Fira Sans;
+  margin-bottom: 8px;
+}
+.wrapper main .content .feedback form .feedback-wrapper textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #73cdda;
+  border-radius: 3px;
+  font-family: Fira Sans;
+  min-height: 300px;
+  resize: none;
+}
+.wrapper main .content .feedback form .feedback-wrapper textarea::-webkit-input-placeholder {
+  color: grey;
+}
+.wrapper main .content .feedback form .feedback-wrapper textarea::-moz-placeholder {
+  color: grey;
+}
+.wrapper main .content .feedback form .feedback-wrapper textarea:-moz-placeholder {
+  color: grey;
+}
+.wrapper main .content .feedback form .feedback-wrapper textarea:-ms-input-placeholder {
+  color: grey;
+}
+.wrapper main .content .feedback form .feedback-wrapper input[type="submit"] {
+  margin-top: 30px;
+  padding: 5px 15px;
+}
+.wrapper main .content .feedback form .feedback-wrapper input[type="reset"] {
+  margin-top: 30px;
+  padding: 5px 15px;
 }
 .wrapper main .content .my-works {
   padding: 0;
@@ -890,5 +980,28 @@ a:hover {
   .wrapper main .content .my-works .wrap-work .work-item img {
     width: 100%;
     height: auto;
+  }
+}
+@media (max-width: 400px) {
+  .wrapper main .content .feedback form .feedback-wrapper {
+    flex-direction: column;
+  }
+  .wrapper main .content .feedback form .feedback-wrapper section {
+    width: 100%;
+  }
+  .wrapper main .content .feedback form .feedback-wrapper section label:last-of-type {
+    margin-top: 10px;
+  }
+  .wrapper main .content .feedback form .feedback-wrapper input[type="submit"] {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    width: 60%;
+  }
+  .wrapper main .content .feedback form .feedback-wrapper input[type="reset"] {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    width: 60%;
   }
 }

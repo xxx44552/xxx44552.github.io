@@ -9,7 +9,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<script src="main.js" defer></script>
-	<meta name='freelancehunt' content='c0152df53bf7aa0' />
 </head>
 <body>
 	<div class="wrapper">
@@ -26,8 +25,8 @@
 						<a target="_blank" href="https://www.instagram.com/kudaev_art"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 					</div>
 				</div>
-			<a id="mobile-menu" href="#!"><i class="fa fa-bars" aria-hidden="true"></i></a>
-		</header>
+				<a id="mobile-menu" href="#!"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			</header>
 		<hr>
 		<main>
 			<nav id="mob-nav" class="hiddenMenu">
@@ -41,11 +40,11 @@
 			<aside>
 				<nav>
 					<ul>
-						<li class="nav-active"><a href="index.html" class="nav-a-active">Обо мне</a></li>
+						<li><a href="index.html">Обо мне</a></li>
 						<li><a href="work.html">Мои работы</a></li>
-						<li><a href="feedback.html">Обратная связь</a></li>
+						<li class="nav-active"><a href="feedback.html" class="nav-a-active">Обратная связь</a></li>
 					</ul>
-				</nav>				
+				</nav>
 				<div class="contact">
 					<a href="#!"><section><h4>Контакты</h4></section></a>
 					<a href="mailto:xxx44552@gmail.com" title="xxx44552@gmail.com"><section><i class="fa fa-envelope-o" aria-hidden="true"></i><span>Gmail</span></section></a>
@@ -54,68 +53,24 @@
 				</div>
 			</aside>
 			<div class="content" onclick="closeMenu()">
-				<article class="info">
-					<h3>Основная информация</h3>
-					<div class="info-wrap">
-						<img src="img/foto.png" alt="">
-						<section>
-						<span><b>Меня зовут:</b> Кудаев Артур</span>
-						<span><b>Возраст:</b> 28 лет</span>
-						<span><b>Город:</b> Казатин, Украина</span>
-						<span><b>Специализация:</b> FRONTEND разработчик</span>
-						<span><b>Навыки:</b>
-						<div class="skill">HTML</div>
-						<div class="skill">CSS</div>
-						<div class="skill">LESS</div>
-						<div class="skill">JavaScript</div>
-						<div class="skill">Wordpress</div>
-						<div class="skill">GIT</div>
-						<div class="skill">Angular</div>
-						<div class="skill">Bootstrap</div>
-						</span>
-					</section>
-					</div>
-				</article>
-				<article class="experience">
-					<h3>Опыт работы</h3>
-					<section>
-						<i class="fa fa-briefcase" aria-hidden="true"></i>
-						<div class="wrap-exp">
-							<p>"Украинская железная дорога" - Связист</p>
-							<span>Декабрь 2010 - Июнь 2011</span>
+				<article class="feedback">
+					<h3>Обратная связь</h3>
+					<form action="send.php" method="post">
+						<div class="feedback-wrapper">
+							<section>
+								<label for="name">Имя</label>
+								<input type="text" name="name" id="name" required placeholder="Ваше имя">
+							</section>
+							<section>
+								<label for="name">Почта</label>
+								<input type="text" name="email" id="email" required placeholder="Ваша почта">
+							</section>
+							<label for="messege">Сообщение</label>
+							<textarea name="mess" id="messege" required placeholder="Ваше сообщение"></textarea>
+							<input type="submit" value="Отправить">
+							<input type="reset" value="Очистить">
 						</div>
-					</section>
-					<section>
-						<i class="fa fa-briefcase" aria-hidden="true"></i>
-						<div class="wrap-exp">
-							<p>"ООО Инфракон" - Системный администратор</p>
-							<span>Август 2011 - Январь 2017</span>
-						</div>
-					</section>
-					<section>
-						<i class="fa fa-briefcase" aria-hidden="true"></i>
-						<div class="wrap-exp">
-							<p>Frontend разработчик</p>
-							<span>Январь 2017 - Настоящее время</span>
-						</div>
-					</section>
-				</article>
-				<article class="education">
-					<h3>Образование</h3>
-					<section>
-						<i class="fa fa-graduation-cap" aria-hidden="true"></i>
-						<div class="wrap-ed">
-							<p>Полное высшее. ДЕТУТ</p>
-							<span>Сентябрь 2008 - Июнь 2013</span>
-						</div>
-					</section>
-					<section>
-						<i class="fa fa-graduation-cap" aria-hidden="true"></i>
-						<div class="wrap-ed">
-							<p>Самостоятельное изучение веб-разработки</p>
-							<span>Сентябрь 2016 - Настоящее время</span>
-						</div>
-					</section>
+					</form>
 				</article>
 			</div>
 			<div class="social-mobile">
